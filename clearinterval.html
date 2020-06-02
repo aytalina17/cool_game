@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button class="btn">stop</button>
+    <script type="text/javascript">
+    	let btn = document.querySelector('.btn');
+    	//clearInterval - останавливает setInterval
+    	let sayHi = function(){
+    		console.log('Привет!');
+    	}
+    	let stop = setInterval(sayHi, 1000);
+
+    	btn.onclick = function(){
+            clearInterval(stop);
+    	}
+    </script>
+</body>
+</html>
